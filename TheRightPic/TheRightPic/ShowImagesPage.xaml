@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="TheRightPic.ShowImagesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheRightPic"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock Text="Quan sát kĩ hai hình dưới" FontSize="22" TextAlignment="Center" ></TextBlock>
+        <Image x:Name="imgTop" HorizontalAlignment="Left" Height="239" VerticalAlignment="Top" Width="400" Source="puzzles.jpg" Margin="0,37,0,0"/>
+        <Image x:Name="imgBottom" HorizontalAlignment="Left" Height="245" VerticalAlignment="Top" Width="400" Margin="0,300,0,0" Source="puzzles.jpg"/>
+        <TextBlock x:Name="lblTimer" Text="10"  HorizontalAlignment="Center" Margin="5,552,5,10" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="72" Width="390" TextAlignment="Center" Height="78"/>
+
+    </Grid>
+</Page>
