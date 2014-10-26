@@ -9,10 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock Text="Quan sát kĩ hai hình dưới" FontSize="22" TextAlignment="Center" ></TextBlock>
-        <Image x:Name="imgTop" HorizontalAlignment="Left" Height="239" VerticalAlignment="Top" Width="400" Source="puzzles.jpg" Margin="0,37,0,0"/>
-        <Image x:Name="imgBottom" HorizontalAlignment="Left" Height="245" VerticalAlignment="Top" Width="400" Margin="0,300,0,0" Source="puzzles.jpg"/>
-        <TextBlock x:Name="lblTimer" Text="10"  HorizontalAlignment="Center" Margin="5,552,5,10" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="72" Width="390" TextAlignment="Center" Height="78"/>
+        <TextBlock Text="Score: 5/12" FontSize="18" TextAlignment="Right" Margin="277,4,10,608" FontWeight="Bold" Foreground="#FFF0E730" ></TextBlock>
+        <Image x:Name="imgTop" HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="400" Source="p001.jpg" Margin="0,33,0,0"/>
+        <Image x:Name="imgBottom" HorizontalAlignment="Left" Height="238" Width="400" VerticalAlignment="Top"  Margin="0,292,0,0" Source="p002.jpg"/>
+        <TextBlock x:Name="lblTimer" Text="10"  HorizontalAlignment="Center" Margin="0,529,0,61" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Width="400" TextAlignment="Center" Height="50"/>
+        <Button Background="Red" Content="Button" HorizontalAlignment="Left" Margin="0,575,0,-10" VerticalAlignment="Top" Width="400" Height="75"/>
+        <HyperlinkButton Content="Main" Click="GoHome" Margin="10,-4,0,613" FontSize="20" FontWeight="Bold" Foreground="#FF5CBFF7"></HyperlinkButton>
+
 
     </Grid>
 </Page>

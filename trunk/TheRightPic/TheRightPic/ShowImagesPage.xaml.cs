@@ -25,7 +25,7 @@ namespace TheRightPic
     /// </summary>
     public sealed partial class ShowImagesPage : Page
     {
-        const int COUNTDOWN_STARTAT = 10;
+        const int COUNTDOWN_STARTAT = 8;
         DispatcherTimer timer = new DispatcherTimer() ;
         int current = COUNTDOWN_STARTAT;
 
@@ -42,30 +42,57 @@ namespace TheRightPic
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Display images to raise question
-            imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "puzzles.jpg"));
+            //imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "puzzles.jpg"));
 
 
 
             timer_Tick(null, null);
 
-            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Interval = TimeSpan.FromMilliseconds(40);
             timer.Tick += timer_Tick;
             timer.Start();
 
         }
+        int count = 0;
+        bool flag = true;
 
         void timer_Tick(object sender, object e)
         {
-            if (current == -1)
+            if (flag)
+            {
+                imgTop.Width -= 3;
+                imgTop.Height -= 3;
+            }
+            else
+            {                
+                imgTop.Width += 3;
+                imgTop.Height += 3;
+            }
+
+            count++;
+            if (count == 10)
+            {
+                count = 0;
+                flag = !flag;
+            }
+           
+
+
+            if (current == -1000)
             {
                 timer.Stop();
                 Frame.Navigate(typeof(ShowQuestionPage));
             }
             else
             {
-                lblTimer.Text = current.ToString();
+                lblTimer.Text = current.ToString() + "s";
                 current--;
             }
+        }
+
+        private void GoHome(object sender, RoutedEventArgs e)
+        {
+
         }
 
     }
