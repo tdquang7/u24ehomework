@@ -38,6 +38,8 @@ namespace TheRightPic
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            lblQuestion.Text = "Hình có con rùa là hình nào?";
+
             timer_Tick(null, null);
 
             timer.Interval = TimeSpan.FromSeconds(1);
