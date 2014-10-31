@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Questions ImageType="Top">
+	<Image FileName="h001.jpg">
+		<Question Content="There are 5 birds flying in the upper picture, right?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="The sword in the upper picture has 4 rings, doesn't it?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, what is the color of the boy's hair?" LabelA="Black" LabelB="Brown" Answer="Brown"  />
+		<Question Content="In the upper picture, is there a small golden tree on the boy's forehead?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="In the upper picture, how many finger(s) is the boy stretching out?" LabelA="2" LabelB="3" Answer="2"  />
+	</Image>
+	<Image FileName="h002.jpg">
+		<Question Content="In the upper picture, what is the turtle doing?" LabelA="showing its teeth" LabelB="Showing its tongue" Answer="Showing its tongue"  />
+		<Question Content="In the upper picture, how many finger(s) is the boy stretching out?" LabelA="4" LabelB="3" Answer="3"  />
+		<Question Content="In the upper picture, is there a rat on the boy's arm?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, what color is the turtle's shell?" LabelA="Pink" LabelB="Blue" Answer="Pink"  />
+		<Question Content="In the upper picture, is the boy winking?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+	</Image>
+	<Image FileName="h003.jpg">
+		<Question Content="In the upper picture, is the rose held in the princess's hand?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, is the princess wearing 3 necklaces?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="In the upper picture, is the princess wearing silver crown?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, is it day or night?" LabelA="Day" LabelB="Night" Answer="Night"  />
+		<Question Content="In the upper picture, is red among the peacock's colors?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+	</Image>
+	<Image FileName="h004.jpg">
+		<Question Content="In the upper picture, how many dragon tails are there on the god's body and arms?" LabelA="5" LabelB="6" Answer="5"  />
+		<Question Content="In the upper picture, how many golden bar(s) are there on the god's hair?" LabelA="6" LabelB="8" Answer="8"  />
+		<Question Content="In the upper picture, is the god's coat green and red?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="In the upper picture, how many gem(s) are there on the god's weapon?" LabelA="4" LabelB="3" Answer="3"  />
+		<Question Content="In the upper picture, where is the god pointing?" LabelA="The ground" LabelB="The sky" Answer="The sky"  />
+	</Image>
+	<Image FileName="h005.jpg">
+		<Question Content="In the upper picture, is there a lotus?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="In the upper picture, how many dragonfly(ies) can you see?" LabelA="0" LabelB="1" Answer="1"  />
+		<Question Content="In the upper picture, is the fairy wearing orchid ear-rings?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, what does the fairy wear on her wrists?" LabelA="Bracelet" LabelB="Feathers" Answer="feathers"  />
+		<Question Content="In the upper picture, what color is the fairy's hair?" LabelA="Red" LabelB="Green" Answer="Red"  />
+	</Image>
+	<Image FileName="h006.jpg">
+		<Question Content="In the upper picture, who does the god look like?" LabelA="A forest god" LabelB="An ocean god" Answer="A forest god"  />
+		<Question Content="In the upper picture, is there any yellow leaf?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, how many leaves are there?" LabelA="12" LabelB="11" Answer="11"  />
+		<Question Content="In the upper picture, is the god touching his middle finger to his thumb?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, how many knots of hair does the god have?" LabelA="8" LabelB="9" Answer="9"  />
+	</Image>
+	<Image FileName="h007.jpg">
+		<Question Content="In the upper picture, is there any snail?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="How many fish are there in the upper picture?" LabelA="5" LabelB="3" Answer="3"  />
+		<Question Content="In the upper picture, is there any cuttle?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="In the upper picture, is the god propping his chin?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="In the upper picture, who does the god look like?" LabelA="A forest god" LabelB="An ocean god" Answer="An ocean god"  />
+	</Image>
+	<Image FileName="h008.jpg">
+		<Question Content="In the upper picture, how may goats are there?" LabelA="3" LabelB="4" Answer="4"  />
+		<Question Content="In the upper picture, how is the boy's hair?" LabelA="Long" LabelB="Short" Answer="Long"  />
+		<Question Content="In the upper picture, how is the color of the boy's clothes?" LabelA="cool tone" LabelB="hot tone" Answer="hot tone"  />
+		<Question Content="In the upper picture, what is standing on the boy's shoulder?" LabelA="A dove" LabelB="A parrot" Answer="A parrot"  />
+		<Question Content="In the upper picture, how may goats are opening their eyes?" LabelA="3" LabelB="2" Answer="3"  />
+	</Image>
+	<Image FileName="h009.jpg">
+		<Question Content="How many fish are there in the upper picture?" LabelA="7" LabelB="9" Answer="9"  />
+		<Question Content="In the upper picture, what color is the bowl held by the boy?" LabelA="violet" LabelB="green" Answer="violet"  />
+		<Question Content="In the upper picture, what is the boy's shirt decorated with?" LabelA="sea shells" LabelB="golden orchids" Answer="A"  />
+		<Question Content="How many green fish are there in the upper picture?" LabelA="3" LabelB="4" Answer="A"  />
+		<Question Content="In the upper picture, is the boy wearing plain fabric?" LabelA="Yes" LabelB="No" Answer="No"  />
+	</Image>
+	<Image FileName="h010.jpg">
+		<Question Content="In the upper picture, how does the mermaid's tail look like?" LabelA="A carp" LabelB="A dolphin" Answer="A dolphin"  />
+		<Question Content="In the upper picture, what color is the mermaid's hair-wear?" LabelA="Red" LabelB="Blue" Answer="Red"  />
+		<Question Content="In the upper picture, is there any octopus around the mermaid?" LabelA="Yes" LabelB="No" Answer="Yes"  />
+		<Question Content="In the upper picture, what color are the sea-horses?" LabelA="Violet and green" LabelB="Pink and orange" Answer="Violet and green"  />
+		<Question Content="How many bunches of seaweed are there in the upper picture?" LabelA="4" LabelB="3" Answer="3"  />
+	</Image>
+</Questions>
