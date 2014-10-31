@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Xml.Linq;
+using Windows.UI;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -25,6 +27,7 @@ namespace TheRightPic
         const int COUNTDOWN_STARTAT = 10;
         DispatcherTimer timer = new DispatcherTimer();
         int current = COUNTDOWN_STARTAT;
+        Question selectedQuestion;
 
         public ShowQuestionPage()
         {
@@ -38,20 +41,31 @@ namespace TheRightPic
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            lblQuestion.Text = "Hình có con rùa là hình nào?";
+            DisplayImage img = e.Parameter as DisplayImage;
+            Random randomizer = new Random();
 
+            selectedQuestion = img.Questions[randomizer.Next(img.Questions.Count)];
+
+            lblQuestion.Text = selectedQuestion.Content;
+            btnTop.Content = selectedQuestion.LabelA;
+            btnBottom.Content = selectedQuestion.LabelB;
+
+            // Hack, bắt đầu xử lí sự kiện timer ngay lập tức
             timer_Tick(null, null);
 
+            // Bắt đầu đếm ngược thời gian
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
             timer.Start();
         }
+        
 
         void timer_Tick(object sender, object e)
         {
             if (current == -1)
             {
                 timer.Stop();
+
                 // TODO: Hiển thị kết quả và chuyển qua câu hỏi kế
 
 
@@ -63,14 +77,46 @@ namespace TheRightPic
             }
         }
 
-        private void btnTop_CLick(object sender, RoutedEventArgs e)
+        private void btnTop_Click(object sender, RoutedEventArgs e)
         {
+            // Ẩn nút còn lại
+            btnBottom.Visibility = Visibility.Collapsed;
 
+            responseCorrect()
+
+            if (selectedQuestion.Answer == selectedQuestion.LabelA)
+                responseCorrect();
+            else
+                responseWrong();
         }
 
         private void btnBottom_Click(object sender, RoutedEventArgs e)
         {
+            // Ẩn nút còn lại
+            btnTop.Visibility = Visibility.Collapsed;
+
+            if (selectedQuestion.Answer == selectedQuestion.LabelB)
+                responseCorrect();
+            else
+                responseWrong();
+        }
+
+        void response(Button b, bool correct)
+        {
+            b.Background = correct ? Color.FromArgb() : Color.FromArgb();
+        }
+
+        // Hồi đáp nếu trả lời đúng
+        void responseCorrect()
+        {
+            
+        }
+
+        // Hồi đáp nếu trả lời sai
+        void responseWrong()
+        {
 
         }
+
     }
 }

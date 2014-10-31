@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
+using System.Xml.Linq;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -29,8 +30,13 @@ namespace TheRightPic
         DispatcherTimer timer = new DispatcherTimer() ;
         int current = COUNTDOWN_STARTAT;
 
+        DisplayImage top;
+        DisplayImage bottom;
+        Random randomizer;
+
         public ShowImagesPage()
         {
+            randomizer = new Random();
             this.InitializeComponent();
         }
 
@@ -41,54 +47,62 @@ namespace TheRightPic
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // Display images to raise question
-            //imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "puzzles.jpg"));
+            // TODO: chuyển việc load xml này về sự kiện start của MainPage
+            List<DisplayImage> highQuestions = LoadDisplayImage("high/Questions.xml");
+            List<DisplayImage> lowQuestions = LoadDisplayImage("low/Questions.xml");
 
+            // Chọn ngẫu nhiên hai hình để hiển thị trên dưới
+            top = highQuestions[randomizer.Next(highQuestions.Count)];
+            bottom = lowQuestions[randomizer.Next(lowQuestions.Count)];
+            
+            // Hiển thị hai hình đã chọn ra
+            imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "high/" + top.FileName));
+            imgBottom.Source = new BitmapImage(new Uri(this.BaseUri, "low/" + bottom.FileName));
 
-
+            // Hack, gọi hàm đếm ngược ngay lập tức
             timer_Tick(null, null);
 
-            timer.Interval = TimeSpan.FromMilliseconds(40);
+            // Đếm ngược thời gian
+            timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
             timer.Start();
 
         }
-        int count = 0;
-        bool flag = true;
 
         void timer_Tick(object sender, object e)
         {
-            if (flag)
-            {
-                imgTop.Width -= 3;
-                imgTop.Height -= 3;
-            }
-            else
-            {                
-                imgTop.Width += 3;
-                imgTop.Height += 3;
-            }
-
-            count++;
-            if (count == 10)
-            {
-                count = 0;
-                flag = !flag;
-            }
-           
-
-
-            if (current == -1000)
+            if (current == -1)
             {
                 timer.Stop();
-                Frame.Navigate(typeof(ShowQuestionPage));
+
+                // Lựa một trong hai hình để đặt câu hỏi
+                DisplayImage chosen = randomizer.Next() % 2 == 0 ? top : bottom;
+
+                // Chuyển qua hiển thị câu hỏi 
+                Frame.Navigate(typeof(ShowQuestionPage), chosen);
             }
             else
             {
+                // Hiển thị số giây còn lại
                 lblTimer.Text = current.ToString() + "s";
                 current--;
             }
         }
+
+        // Nạp danh sách các hình với câu hỏi tương ứng từ tập tin xml
+        List<DisplayImage> LoadDisplayImage(string xmlPath)
+        {
+            XDocument doc = XDocument.Load(xmlPath);
+
+            var imgs = doc.Descendants("Image").ToList<XElement>();
+            var list = new List<DisplayImage>();
+
+            foreach (var img in imgs)
+                list.Add(DisplayImage.Parse(img));
+
+            return list;
+        }
+
 
         private void GoHome(object sender, RoutedEventArgs e)
         {

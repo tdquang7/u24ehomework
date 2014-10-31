@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBlock x:Name="lblQuestion" Text="Hình trên hay hình dưới là đúng?" Margin="0,67,0,494" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Width="400" Height="79" TextWrapping="WrapWholeWords" TextAlignment="Center"/>
-        <Button x:Name="btnTop" Content="Trên" Click="btnTop_CLick" HorizontalAlignment="Left" Margin="150,165,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnTop" Content="Trên" Click="btnTop_Click" HorizontalAlignment="Left" Margin="150,165,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnBottom" Content="Dưới" Click="btnBottom_Click" HorizontalAlignment="Left" Margin="150,240,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="lblTimer" Text="10"  HorizontalAlignment="Left" Margin="0,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72" Width="400" TextAlignment="Center"/>
 
