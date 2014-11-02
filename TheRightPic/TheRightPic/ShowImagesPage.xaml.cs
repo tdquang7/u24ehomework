@@ -19,14 +19,14 @@ using System.Xml.Linq;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
-namespace TheRightPic
+namespace NowUSeeIt
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class ShowImagesPage : Page
     {
-        const int COUNTDOWN_STARTAT = 8;
+        const int COUNTDOWN_STARTAT = 10;
         DispatcherTimer timer = new DispatcherTimer() ;
         int current = COUNTDOWN_STARTAT;
 
@@ -47,17 +47,16 @@ namespace TheRightPic
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // TODO: chuyển việc load xml này về sự kiện start của MainPage
-            List<DisplayImage> highQuestions = LoadDisplayImage("high/Questions.xml");
-            List<DisplayImage> lowQuestions = LoadDisplayImage("low/Questions.xml");
+            // Hiển thị thông tin điểm hiện tại
+            lblScore.Text = String.Format("Score: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
 
             // Chọn ngẫu nhiên hai hình để hiển thị trên dưới
-            top = highQuestions[randomizer.Next(highQuestions.Count)];
-            bottom = lowQuestions[randomizer.Next(lowQuestions.Count)];
+            top = Global.TopImageList[randomizer.Next(Global.TopImageList.Count)];
+            bottom = Global.BottomImageList[randomizer.Next(Global.BottomImageList.Count)];
             
             // Hiển thị hai hình đã chọn ra
-            imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "high/" + top.FileName));
-            imgBottom.Source = new BitmapImage(new Uri(this.BaseUri, "low/" + bottom.FileName));
+            imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "img/high/" + top.FileName));
+            imgBottom.Source = new BitmapImage(new Uri(this.BaseUri, "img/low/" + bottom.FileName));
 
             // Hack, gọi hàm đếm ngược ngay lập tức
             timer_Tick(null, null);
@@ -89,25 +88,10 @@ namespace TheRightPic
             }
         }
 
-        // Nạp danh sách các hình với câu hỏi tương ứng từ tập tin xml
-        List<DisplayImage> LoadDisplayImage(string xmlPath)
-        {
-            XDocument doc = XDocument.Load(xmlPath);
-
-            var imgs = doc.Descendants("Image").ToList<XElement>();
-            var list = new List<DisplayImage>();
-
-            foreach (var img in imgs)
-                list.Add(DisplayImage.Parse(img));
-
-            return list;
-        }
-
-
         private void GoHome(object sender, RoutedEventArgs e)
         {
-
+            timer.Stop();
+            Frame.Navigate(typeof(MainPage));
         }
-
     }
 }
