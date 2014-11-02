@@ -7,8 +7,8 @@
     <ProjectGuid>{B1674654-4930-4B9B-8B84-276B7BD964FF}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TheRightPic</RootNamespace>
-    <AssemblyName>TheRightPic</AssemblyName>
+    <RootNamespace>NowUSeeIt</RootNamespace>
+    <AssemblyName>NowUSeeIt</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
@@ -80,12 +80,14 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Folder Include="img\app\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Entity\DisplayImage.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -97,6 +99,7 @@
     <Compile Include="ShowQuestionPage.xaml.cs">
       <DependentUpon>ShowQuestionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -110,28 +113,33 @@
     <Content Include="Assets\Square71x71Logo.scale-240.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
-    <Content Include="high\h001.jpg" />
-    <Content Include="high\h002.jpg" />
-    <Content Include="high\h003.jpg" />
-    <Content Include="high\h004.jpg" />
-    <Content Include="high\h005.jpg" />
-    <Content Include="high\h006.jpg" />
-    <Content Include="high\h007.jpg" />
-    <Content Include="high\h008.jpg" />
-    <Content Include="high\h009.jpg" />
-    <Content Include="high\h010.jpg" />
-    <Content Include="high\Questions.xml" />
-    <Content Include="low\l001.jpg" />
-    <Content Include="low\l002.jpg" />
-    <Content Include="low\l003.jpg" />
-    <Content Include="low\l004.jpg" />
-    <Content Include="low\l005.jpg" />
-    <Content Include="low\l006.jpg" />
-    <Content Include="low\l007.jpg" />
-    <Content Include="low\l008.jpg" />
-    <Content Include="low\l009.jpg" />
-    <Content Include="low\l010.jpg" />
-    <Content Include="low\Questions.xml" />
+    <Content Include="img\backgound.jpg" />
+    <Content Include="img\high\h001.jpg" />
+    <Content Include="img\high\h002.jpg" />
+    <Content Include="img\high\h003.jpg" />
+    <Content Include="img\high\h004.jpg" />
+    <Content Include="img\high\h005.jpg" />
+    <Content Include="img\high\h006.jpg" />
+    <Content Include="img\high\h007.jpg" />
+    <Content Include="img\high\h008.jpg" />
+    <Content Include="img\high\h009.jpg" />
+    <Content Include="img\high\h010.jpg" />
+    <Content Include="img\high\Questions.xml" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\low\l001.jpg" />
+    <Content Include="img\low\l002.jpg" />
+    <Content Include="img\low\l003.jpg" />
+    <Content Include="img\low\l004.jpg" />
+    <Content Include="img\low\l005.jpg" />
+    <Content Include="img\low\l006.jpg" />
+    <Content Include="img\low\l007.jpg" />
+    <Content Include="img\low\l008.jpg" />
+    <Content Include="img\low\l009.jpg" />
+    <Content Include="img\low\l010.jpg" />
+    <Content Include="img\low\Questions.xml" />
+    <Content Include="img\OK.png" />
+    <Content Include="img\Problem.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

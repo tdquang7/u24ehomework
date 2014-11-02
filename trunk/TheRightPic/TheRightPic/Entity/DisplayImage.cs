@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace TheRightPic
+namespace NowUSeeIt
 {
     class DisplayImage
     {
+        public string BasePath { get; set; }
         public string FileName { get; set; }
         public List<Question> Questions { get; set; }
 

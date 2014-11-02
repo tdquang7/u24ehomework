@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
-namespace TheRightPic
+namespace NowUSeeIt
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -34,7 +34,7 @@ namespace TheRightPic
         public App()
         {
             this.InitializeComponent();
-            this.Suspending += this.OnSuspending;
+            this.Suspending += this.OnSuspending;            
         }
 
         /// <summary>
