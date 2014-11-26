@@ -48,7 +48,7 @@ namespace NowUSeeIt
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Hiển thị thông tin điểm hiện tại
-            lblScore.Text = String.Format("Score: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
+            lblScore.Text = String.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
 
             // Chọn ngẫu nhiên hai hình để hiển thị trên dưới
             top = Global.TopImageList[randomizer.Next(Global.TopImageList.Count)];
@@ -58,7 +58,7 @@ namespace NowUSeeIt
             imgTop.Source = new BitmapImage(new Uri(this.BaseUri, "img/high/" + top.FileName));
             imgBottom.Source = new BitmapImage(new Uri(this.BaseUri, "img/low/" + bottom.FileName));
 
-            // Hack, gọi hàm đếm ngược ngay lập tức
+            // HACK: gọi hàm đếm ngược ngay lập tức
             timer_Tick(null, null);
 
             // Đếm ngược thời gian

@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Xml.Linq;
 using Windows.Storage;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -47,15 +48,10 @@ namespace NowUSeeIt
             // this event is handled for you.
 
             // Cập nhật lại điểm hiện có ở đây nhờ lớp Global
-
             if(false == Global.Launched) // Vừa mới chạy chương trình lên lần đầu
             {
                 Global.TopImageList = LoadDisplayImage("img/high/Questions.xml", "img/high/");
                 Global.BottomImageList = LoadDisplayImage("img/low/Questions.xml", "img/low/");
-
-                // Kiểm tra tập tin config.ini có tồn tại hay không
-
-                //IsolatedStorageFile fileStorage = IsolatedStorageFile.GetUserStoreForApplication();
 
                 if (false == ApplicationData.Current.LocalSettings.Values.ContainsKey("Points"))
                 {
@@ -64,9 +60,8 @@ namespace NowUSeeIt
                 else
                 {
                     // Đồng nghĩa đã từng chơi rồi
-                    btnStart.Content = "Continue";
-                }
-                    
+                    btnStart.Content = "Chơi tiếp";
+                }                    
 
                 if (!ApplicationData.Current.LocalSettings.Values.ContainsKey("AnsweredQuestionsCount"))
                     ApplicationData.Current.LocalSettings.Values["AnsweredQuestionsCount"] = 0;
@@ -79,8 +74,14 @@ namespace NowUSeeIt
             }
             else
             {
-                txtHowTo.Text = "How to play?";
+                // Tránh trường hợp bấm vào rồi quay lại vẫn thấy hướng dẫn y như cũ
+                txtHowTo.Text = "Cách chơi?";
             }
+
+            // Cho biết trạng thái chơi games hiện tại
+            lblTotalImages.Text = string.Format("Đang có: {0} hình.", Global.TopImageList.Count * 2);
+            lblTotalQuestions.Text = string.Format("Đã trả lời: {0}/{1} câu hỏi.", Global.AnsweredQuestionsCount, Global.TopImageList.Count * 5 * 2);
+            lblCurrentScore.Text = string.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
         }
 
         // Nạp danh sách các hình với câu hỏi tương ứng từ tập tin xml
@@ -108,7 +109,26 @@ namespace NowUSeeIt
         
         private void btnHowTo_Click(object sender, RoutedEventArgs e)
         {
-            txtHowTo.Text= "Watch two pictures carefully, then answer the question!";
+            txtHowTo.Text= "Nhìn thật kĩ hai hình, sau đó trả lời câu hỏi!";
+        }
+
+        private void btnReset_Click(object sender, RoutedEventArgs e)
+        {
+            var msgBox = new MessageDialog("Bạn có chắc muốn xóa điểm hiện tại và tính lại từ đầu?");
+            msgBox.Commands.Add(new UICommand("Có", ResetOK));
+            msgBox.Commands.Add(new UICommand("Không", null));
+            msgBox.ShowAsync();
+        }
+
+        void ResetOK(IUICommand command)
+        {
+            Global.AnsweredQuestionsCount = 0;
+            Global.CurrentPoint = 0;
+            ApplicationData.Current.LocalSettings.Values["Points"] = 0;
+            ApplicationData.Current.LocalSettings.Values["AnsweredQuestionsCount"] = 0;
+
+            lblTotalQuestions.Text = string.Format("Đã trả lời: {0}/{1} câu hỏi.", 0, Global.TopImageList.Count * 5 * 2);
+            lblCurrentScore.Text = string.Format("Điểm: {0}/{1}", 0, 0);
         }
     }
 }
