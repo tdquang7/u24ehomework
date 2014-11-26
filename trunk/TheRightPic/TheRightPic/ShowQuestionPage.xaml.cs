@@ -50,7 +50,7 @@ namespace NowUSeeIt
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             // Hiển thị điểm hiện tại
-            lblScore.Text = String.Format("Score: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
+            lblScore.Text = String.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
 
             // Lựa chọn ngẫu nhiên câu hỏi từ hình
             img = e.Parameter as DisplayImage;
@@ -63,7 +63,7 @@ namespace NowUSeeIt
             btnTop.Content = selectedQuestion.LabelA;
             btnBottom.Content = selectedQuestion.LabelB;
 
-            // Hack, bắt đầu xử lí sự kiện timer ngay lập tức
+            // Hack: bắt đầu xử lí sự kiện timer ngay lập tức
             timer_Tick(null, null);
 
             // Bắt đầu đếm ngược thời gian
