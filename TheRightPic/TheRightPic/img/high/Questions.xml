@@ -19,55 +19,55 @@
 		<Question Content="Ở hình trên, công chúa đeo 3 vòng cổ." LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
 		<Question Content="Ở hình trên, công chúa đang đeo vương miệng bạc.?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
 		<Question Content="Ở hình trên là ngày hay là đêm?" LabelA="Ngày" LabelB="Đêm" Answer="Đêm"  />
-		<Question Content="Ở hình trên, In the upper picture, is red among the peacock's colors?" LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
+		<Question Content="Ở hình trên, lông của con công có màu đỏ nào không?" LabelA="Có" LabelB="Không" Answer="Không"  />
 	</Image>
 	<Image FileName="h004.jpg">
-		<Question Content="In the upper picture, how many dragon tails are there on the god's body and arms?" LabelA="5" LabelB="6" Answer="5"  />
-		<Question Content="In the upper picture, how many golden bar(s) are there on the god's hair?" LabelA="6" LabelB="8" Answer="8"  />
-		<Question Content="In the upper picture, is the god's coat green and red?" LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
-		<Question Content="In the upper picture, how many gem(s) are there on the god's weapon?" LabelA="4" LabelB="3" Answer="3"  />
-		<Question Content="In the upper picture, where is the god pointing?" LabelA="The ground" LabelB="The sky" Answer="The sky"  />
+		<Question Content="Ở hình trên, trên mình và tay của vị thần có bao nhiêu đuôi rồng?" LabelA="5" LabelB="6" Answer="5"  />
+		<Question Content="Ở hình trên, trên tóc của vị thần có bao nhiêu thanh vàng?" LabelA="6" LabelB="8" Answer="8"  />
+		<Question Content="Ở hình trên, áo choàng của vị thần có màu gì?" LabelA="Vàng" LabelB="Đỏ" Answer="Đỏ"  />
+		<Question Content="Ở hình trên, có bao nhiêu viên ngọc trên vũ khí của vị thần?" LabelA="4" LabelB="3" Answer="3"  />
+		<Question Content="Ở hình trên, tay trái của vị thần chỉ lên đâu?" LabelA="Xuống đất" LabelB="Lên trời" Answer="Lên trời"  />
 	</Image>
 	<Image FileName="h005.jpg">
-		<Question Content="In the upper picture, is there a lotus?" LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
-		<Question Content="In the upper picture, how many dragonfly(ies) can you see?" LabelA="0" LabelB="1" Answer="1"  />
-		<Question Content="In the upper picture, is the fairy wearing orchid ear-rings?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
-		<Question Content="In the upper picture, what does the fairy wear on her wrists?" LabelA="Bracelet" LabelB="Feathers" Answer="feathers"  />
-		<Question Content="In the upper picture, what color is the fairy's hair?" LabelA="Red" LabelB="Green" Answer="Red"  />
+		<Question Content="Ở hình trên, có bông hoa sen nào không?" LabelA="Có" LabelB="Không" Answer="Không"  />
+		<Question Content="Ở hình trên, có bao nhiêu con chuồn chuồn?" LabelA="0" LabelB="1" Answer="1"  />
+		<Question Content="Ở hình trên, nữ thần đang đeo bông tai hoa lan đúng không?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
+		<Question Content="Ở hình trên, cổ tay nữ thần có gì?" LabelA="Vòng đeo tay" LabelB="Lông vũ" Answer="Lông vũ"  />
+		<Question Content="Ở hình trên, tóc của nữ thần màu gì?" LabelA="Đỏ" LabelB="Xanh lá" Answer="Đỏ"  />
 	</Image>
 	<Image FileName="h006.jpg">
-		<Question Content="In the upper picture, who does the god look like?" LabelA="A forest god" LabelB="An ocean god" Answer="A forest god"  />
-		<Question Content="In the upper picture, is there any yellow leaf?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
-		<Question Content="In the upper picture, how many leaves are there?" LabelA="12" LabelB="11" Answer="11"  />
-		<Question Content="In the upper picture, is the god touching his middle finger to his thumb?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
-		<Question Content="In the upper picture, how many knots of hair does the god have?" LabelA="8" LabelB="9" Answer="9"  />
+		<Question Content="Ở hình trên vị thần giống thần gì?" LabelA="Thần rừng" LabelB="Thần biển" Answer="Thần rừng"  />
+		<Question Content="Ở hình trên có cái lá vàng nào không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình trên có bao nhiêu cái lá?" LabelA="12" LabelB="11" Answer="11"  />
+		<Question Content="Ở hình trên vị thần đang nắm ngón cái và ngón giữa." LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
+		<Question Content="Ở hình trên vị thần có bao nhiêu búi tóc?" LabelA="8" LabelB="9" Answer="9"  />
 	</Image>
 	<Image FileName="h007.jpg">
-		<Question Content="In the upper picture, is there any snail?" LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
-		<Question Content="How many fish are there in the upper picture?" LabelA="5" LabelB="3" Answer="3"  />
-		<Question Content="In the upper picture, is there any cuttle?" LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
-		<Question Content="In the upper picture, is the god propping his chin?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
-		<Question Content="In the upper picture, who does the god look like?" LabelA="A forest god" LabelB="An ocean god" Answer="An ocean god"  />
+		<Question Content="Ở hình trên có con ốc nào không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình trên có bao nhiêu con cá?" LabelA="5" LabelB="3" Answer="3"  />
+		<Question Content="Ở hình trên có con mực nào không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình trên vị thần đang gãi cằm." LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
+		<Question Content="Ở hình trên vị thần giống loại thần nào?" LabelA="Thần rừng" LabelB="Thần biển" Answer="Thần biển"  />
 	</Image>
 	<Image FileName="h008.jpg">
-		<Question Content="In the upper picture, how may goats are there?" LabelA="3" LabelB="4" Answer="4"  />
-		<Question Content="In the upper picture, how is the boy's hair?" LabelA="Long" LabelB="Short" Answer="Long"  />
-		<Question Content="In the upper picture, how is the color of the boy's clothes?" LabelA="cool tone" LabelB="hot tone" Answer="hot tone"  />
-		<Question Content="In the upper picture, what is standing on the boy's shoulder?" LabelA="A dove" LabelB="A parrot" Answer="A parrot"  />
-		<Question Content="In the upper picture, how may goats are opening their eyes?" LabelA="3" LabelB="2" Answer="3"  />
+		<Question Content="Ở hình trên có bao nhiêu con dê?" LabelA="3" LabelB="4" Answer="4"  />
+		<Question Content="Ở hình trên chàng trai để tóc ra sao?" LabelA="Dài" LabelB="Ngắn" Answer="Dài"  />
+		<Question Content="Ở hình trên quần áo chàng trai có màu vàng và " LabelA="Nâu" LabelB="Đỏ" Answer="Đỏ"  />
+		<Question Content="Ở hình trên trên vai chàng trai có con gì?" LabelA="Chim bồ câu" LabelB="Vẹt" Answer="Vẹt"  />
+		<Question Content="Ở hình trên có bao nhiêu con dê đang mở mắt?" LabelA="3" LabelB="2" Answer="3"  />
 	</Image>
 	<Image FileName="h009.jpg">
-		<Question Content="How many fish are there in the upper picture?" LabelA="7" LabelB="9" Answer="9"  />
-		<Question Content="In the upper picture, what color is the bowl held by the boy?" LabelA="violet" LabelB="green" Answer="violet"  />
-		<Question Content="In the upper picture, what is the boy's shirt decorated with?" LabelA="sea shells" LabelB="golden orchids" Answer="A"  />
-		<Question Content="How many green fish are there in the upper picture?" LabelA="3" LabelB="4" Answer="A"  />
-		<Question Content="In the upper picture, is the boy wearing plain fabric?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
+		<Question Content="Ở hình trên có bao nhiêu con cá?" LabelA="7" LabelB="9" Answer="9"  />
+		<Question Content="Ở hình trên chàng trai cầm chén có màu gì?" LabelA="Tím" LabelB="Xanh lá" Answer="Tím"  />
+		<Question Content="Ở hình trên áo của chàng trai có gì?" LabelA="Vỏ sò" LabelB="Hoa lan vàng" Answer="Vỏ sò"  />
+		<Question Content="Ở hình trên có bao nhiêu con cá màu xanh lục" LabelA="2" LabelB="3" Answer="2"  />
+		<Question Content="Ở hình trên tóc của chàng trai màu gì?" LabelA="Đen" LabelB="Xanh lục" Answer="Xanh lục"  />
 	</Image>
 	<Image FileName="h010.jpg">
-		<Question Content="In the upper picture, how does the mermaid's tail look like?" LabelA="A carp" LabelB="A dolphin" Answer="A dolphin"  />
-		<Question Content="In the upper picture, what color is the mermaid's hair-wear?" LabelA="Red" LabelB="Blue" Answer="Red"  />
-		<Question Content="In the upper picture, is there any octopus around the mermaid?" LabelA="Đúng" LabelB="Sai" Answer="Đúng"  />
-		<Question Content="In the upper picture, what color are the sea-horses?" LabelA="Violet and green" LabelB="Pink and orange" Answer="Violet and green"  />
-		<Question Content="How many bunches of seaweed are there in the upper picture?" LabelA="4" LabelB="3" Answer="3"  />
+		<Question Content="Ở hình trên đuôi của nàng tiên giống đuôi con gì?" LabelA="Cá chép" LabelB="Cá heo" Answer="Cá heo"  />
+		<Question Content="Ở hình trên vật trang sức trên tóc nàng tiên màu gì?" LabelA="Đỏ" LabelB="Xanh dương" Answer="Đỏ"  />
+		<Question Content="Ở hình trên có con mực nào xung quan nàng tiên không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình trên con cá ngựa có màu gì?" LabelA="Tím, xanh lá" LabelB="Hồng, cam" Answer="Tím, xanh lá"  />
+		<Question Content="Ở hình trên có bao nhiêu cụm tảo biển?" LabelA="4" LabelB="3" Answer="3"  />
 	</Image>
 </Questions>
