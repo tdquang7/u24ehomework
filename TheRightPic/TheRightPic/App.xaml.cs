@@ -108,6 +108,8 @@ namespace NowUSeeIt
         /// <param name="e">Details about the navigation event.</param>
         private void RootFrame_FirstNavigated(object sender, NavigationEventArgs e)
         {
+            Global.Display = new Windows.System.Display.DisplayRequest();
+
             var rootFrame = sender as Frame;
             rootFrame.ContentTransitions = this.transitions ?? new TransitionCollection() { new NavigationThemeTransition() };
             rootFrame.Navigated -= this.RootFrame_FirstNavigated;
@@ -126,6 +128,9 @@ namespace NowUSeeIt
 
             // TODO: Save application state and stop any background activity
             deferral.Complete();
+
+            // Cho phép lock screen
+            Global.Display.RequestRelease();
         }
     }
 }

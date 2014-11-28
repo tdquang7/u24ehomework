@@ -18,7 +18,7 @@
 		<Question Content="Ở hình dưới biểu tượng trên ngực vị thần có dạng gì?" LabelA="Chữ thập" LabelB="Ngọn lửa" Answer="Ngọn lửa"  />
 		<Question Content="Ở hình dưới vị thần đang cầm một thanh gươm?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
 		<Question Content="Ở hình dưới cán gươm có màu gì?" LabelA="Xanh dương" LabelB="Đỏ" Answer="Đỏ"  />
-		<Question Content="Ở hình dưới trên vai của vị thần có khiên dạng gì?" LabelA="Đầu cá" LabelB="Đầu sư tử" Answer="Đầu cá"  />
+		<Question Content="Ở hình dưới trên vai của vị thần có cầu vai bảo vệ hình gì?" LabelA="Đầu cá" LabelB="Đầu sư tử" Answer="Đầu cá"  />
 		<Question Content="Ở hình dưới mắt của con cá có màu gì?" LabelA="Cam" LabelB="Xanh dương" Answer="Xanh dương"  />
 	</Image>
 	<Image FileName="l004.jpg">

@@ -10,11 +10,31 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="lblScore" Text="Score: 5/12" FontSize="18" TextAlignment="Right" Margin="277,4,10,608" FontWeight="Bold" Foreground="#FFF0E730" />
-        <Image x:Name="imgTop" HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="400" Margin="0,33,0,0" />
-        <Image x:Name="imgBottom" HorizontalAlignment="Left" Height="238" Width="400" VerticalAlignment="Top" Margin="0,292,0,0"/>
-        <TextBlock x:Name="lblTimer" Text="10"  HorizontalAlignment="Center" Margin="0,529,0,61" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Width="400" TextAlignment="Center" Height="50"/>
-        <HyperlinkButton Content="Main" Click="GoHome" Margin="10,-4,0,613" FontSize="20" FontWeight="Bold" Foreground="#FF5CBFF7"/>
-        <UI:AdControl AutoRefreshIntervalInSeconds="60" ApplicationId="test_client" AdUnitId="Image320_50" HorizontalAlignment="Left" Height="50" IsAutoRefreshEnabled="True" VerticalAlignment="Top" Width="400" Margin="0,590,0,0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="490"/>
+            <RowDefinition Height="52"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Height="30" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <HyperlinkButton Content="Màn hình chính" Click="GoHome" FontSize="20" FontWeight="Bold" Foreground="#FF5CBFF7" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock x:Name="lblScore" Text="Score: 5/12" FontSize="18" TextAlignment="Right" FontWeight="Bold" Foreground="#FFF0E730" Grid.Column="1" VerticalAlignment="Bottom"/>
+        </Grid>
+        
+        <StackPanel Grid.Row="1">
+            <Image x:Name="imgTop" Source="img/high/h001.jpg" HorizontalAlignment="Center" Height="238" Width="400" VerticalAlignment="Top" />
+            <TextBlock ></TextBlock>
+            <Image x:Name="imgBottom" Source="img/high/h002.jpg" HorizontalAlignment="Center" Height="238" Width="400" VerticalAlignment="Top"/>
+        </StackPanel>
+        
+        <TextBlock x:Name="lblTimer" Text="15s"  HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Width="400" TextAlignment="Center" Height="50" Grid.Row="2"/>
+        
+        <UI:AdControl AutoRefreshIntervalInSeconds="60" ApplicationId="test_client" AdUnitId="Image320_50" HorizontalAlignment="Center" Height="60" IsAutoRefreshEnabled="True" VerticalAlignment="Top" Width="400" Grid.Row="3"/>
     </Grid>
 </Page>
