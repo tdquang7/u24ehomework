@@ -13,7 +13,7 @@
         <TextBlock x:Name="lblQuestion" Text="Câu hỏi để trả lời, có thể kéo dài trên hai dòng hoặc hơn!" Margin="25,58,30,503" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Width="345" Height="79" TextWrapping="WrapWholeWords" TextAlignment="Center"/>
         <Button x:Name="btnTop" Content="Đáp án A" Click="btnTop_Click" HorizontalAlignment="Left" Margin="31,111,0,0" VerticalAlignment="Top" Width="165"/>
         <Button x:Name="btnBottom" Content="Đáp án B" Click="btnBottom_Click" HorizontalAlignment="Left" Margin="213,111,0,0" VerticalAlignment="Top" Width="165"/>
-        <TextBlock x:Name="lblTimer" Text="10s"  HorizontalAlignment="Left" Margin="-10,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72" Width="400" TextAlignment="Center"/>
+        <TextBlock x:Name="lblTimer" Text="10s"  HorizontalAlignment="Left" Margin="0,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72" Width="400" TextAlignment="Center"/>
         <TextBlock x:Name="lblScore" Text="Điểm: 5/12" FontSize="18" TextAlignment="Right" Margin="277,4,10,608" FontWeight="Bold" Foreground="#FFF0E730" />
         <HyperlinkButton Content="Main" Click="GoHome" Margin="10,-4,0,613" FontSize="20" FontWeight="Bold" Foreground="#FF5CBFF7"/>
         <Image x:Name="imgAnswer" HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="400" Margin="0,259,0,0"/>

@@ -124,7 +124,9 @@
     <Content Include="img\high\h008.jpg" />
     <Content Include="img\high\h009.jpg" />
     <Content Include="img\high\h010.jpg" />
-    <Content Include="img\high\Questions.xml" />
+    <Content Include="img\high\Questions.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="img\icon.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\low\l001.jpg" />
@@ -137,7 +139,9 @@
     <Content Include="img\low\l008.jpg" />
     <Content Include="img\low\l009.jpg" />
     <Content Include="img\low\l010.jpg" />
-    <Content Include="img\low\Questions.xml" />
+    <Content Include="img\low\Questions.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="img\OK.png" />
     <Content Include="img\Problem.png" />
   </ItemGroup>

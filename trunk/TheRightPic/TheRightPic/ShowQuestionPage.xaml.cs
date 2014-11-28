@@ -81,7 +81,7 @@ namespace NowUSeeIt
             if (current == -1)
             {
                 timer.Stop();
-                response(null, false);
+                response(null, false); // Hiển thị đáp án đúng
             }
             else
             {
@@ -133,12 +133,15 @@ namespace NowUSeeIt
             else // Hết giờ
             {
                 // Làm nổi bật nút đáp án
-                if (btnTop.Content == selectedQuestion.Answer)
+                string top = btnTop.Content.ToString() ;
+                string answer = selectedQuestion.Answer;
+                if (top == answer)
                     btnTop.Background = new SolidColorBrush(RED);
                 else
                     btnBottom.Background = new SolidColorBrush(RED);                             
             }
             
+            // Hiển thị hình ảnh của câu hỏi để người chơi kiểm tra lại
             imgAnswer.Source = new BitmapImage(new Uri(this.BaseUri, img.BasePath + img.FileName));
             logo.Visibility = Visibility.Visible;
             btnNext.Visibility = Visibility.Visible;
@@ -151,7 +154,7 @@ namespace NowUSeeIt
 
             Global.AnsweredQuestionsCount++;
 
-            lblScore.Text = String.Format("Score: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
+            lblScore.Text = String.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
 
             // Lưu lại 
             ApplicationData.Current.LocalSettings.Values["Points"] = Global.CurrentPoint;

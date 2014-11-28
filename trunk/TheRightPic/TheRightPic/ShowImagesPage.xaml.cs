@@ -26,7 +26,7 @@ namespace NowUSeeIt
     /// </summary>
     public sealed partial class ShowImagesPage : Page
     {
-        const int COUNTDOWN_STARTAT = 10;
+        const int COUNTDOWN_STARTAT = 15;
         DispatcherTimer timer = new DispatcherTimer() ;
         int current = COUNTDOWN_STARTAT;
 

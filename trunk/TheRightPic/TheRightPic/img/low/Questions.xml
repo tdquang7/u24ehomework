@@ -1,73 +1,73 @@
 <?xml version="1.0"?>
 <Questions ImageType="Top">
 	<Image FileName="l001.jpg">
-		<Question Content="In the lower picture, is the tiger angry?" LabelA="Yes" LabelB="No" Answer="No"  />
-		<Question Content="In the lower picture, is the boy raising his hand?" LabelA="Yes" LabelB="No" Answer="No"  />
-		<Question Content="In the lower picture, is there blue color on the boy's shirt?" LabelA="Yes" LabelB="No" Answer="Yes"  />
-		<Question Content="In the lower picture, what color is the tiger's ears?" LabelA="White" LabelB="Pink" Answer="Pink"  />
-		<Question Content="In the lower picture, on which side of the boy is the sun?" LabelA="Right" LabelB="Left" Answer="Left"  />
+		<Question Content="Ở hình dưới mặt con hổ như thế nào" LabelA="Giận dữ" LabelB="Vui vẻ" Answer="Vui vẻ"  />
+		<Question Content="Ở hình dưới chàng trai có đưa tay nào lên hơn đầu không?" LabelA="Có" LabelB="Không" Answer="Không"  />
+		<Question Content="Ở hình dưới áo chàng trai có phần nào màu xanh dương không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình dưới tai của con hổ đang có màu gì?" LabelA="Trắng" LabelB="Hồng" Answer="Hồng"  />
+		<Question Content="Ở hình dưới mặt trời ở phía nào của chàng trai?" LabelA="Bên phải" LabelB="Bên trái" Answer="Bên trái"  />
 	</Image>
 	<Image FileName="l002.jpg">
-		<Question Content="In the lower picture, what is the pattern on the queen's shoulder?" LabelA="Spiral pattern" LabelB="Striped pattern" Answer="Spiral pattern"  />
-		<Question Content="In the lower picture, what color is the bird on the queen's hair?" LabelA="Red" LabelB="Yellow" Answer="Yellow"  />
-		<Question Content="In the lower picture, what is the queen wearing on her finger?" LabelA="A ruby" LabelB="A sapphire" Answer="A sapphire"  />
-		<Question Content="In the lower picture, how may colors are there on the coral behind the queen?" LabelA="2" LabelB="3" Answer="2"  />
-		<Question Content="In the lower picture, what color is the eye of the golden seahorse?" LabelA="Red" LabelB="Green" Answer="Green"  />
+		<Question Content="Ở hình dưới hoa văn trên vai nữ hoàng theo dạng gì?" LabelA="Xoắn ốc" LabelB="Sọc thẳng" Answer="Xoắn ốc"  />
+		<Question Content="Ở hình dưới con chim trên tóc nữ hoàng có màu gì?" LabelA="Đỏ" LabelB="Vàng" Answer="Vàng"  />
+		<Question Content="Ở hình dưới ngón tay nữ hoàng đang đeo nhẫn có gì?" LabelA="Hồng ngọc" LabelB="Lục bảo" Answer="Lục bảo"  />
+		<Question Content="Ở hình dưới san hô ở phía sau nữ hoàng có bao nhiêu màu?" LabelA="2" LabelB="3" Answer="2"  />
+		<Question Content="Ở hình dưới màu mắt của con cá ngựa là gì?" LabelA="Đỏ" LabelB="Xanh lá" Answer="Xanh lá"  />
 	</Image>
 	<Image FileName="l003.jpg">
-		<Question Content="In the lower picture, what is the symbol on the god's chest?" LabelA="Cross symbol" LabelB="Fire symbol" Answer="Fire symbol"  />
-		<Question Content="In the lower picture, is the god holding one sword?" LabelA="Yes" LabelB="No" Answer="No"  />
-		<Question Content="In the lower picture, what color is the swords' hilts?" LabelA="Blue" LabelB="Red" Answer="Red"  />
-		<Question Content="In the lower picture, what are on the god's shoulders?" LabelA="Fish head shields" LabelB="Lion head shields" Answer="Fish head shields"  />
-		<Question Content="In the lower picture, what color is the fish's eyes?" LabelA="Orange" LabelB="Blue" Answer="Blue"  />
+		<Question Content="Ở hình dưới biểu tượng trên ngực vị thần có dạng gì?" LabelA="Chữ thập" LabelB="Ngọn lửa" Answer="Ngọn lửa"  />
+		<Question Content="Ở hình dưới vị thần đang cầm một thanh gươm?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
+		<Question Content="Ở hình dưới cán gươm có màu gì?" LabelA="Xanh dương" LabelB="Đỏ" Answer="Đỏ"  />
+		<Question Content="Ở hình dưới trên vai của vị thần có khiên dạng gì?" LabelA="Đầu cá" LabelB="Đầu sư tử" Answer="Đầu cá"  />
+		<Question Content="Ở hình dưới mắt của con cá có màu gì?" LabelA="Cam" LabelB="Xanh dương" Answer="Xanh dương"  />
 	</Image>
 	<Image FileName="l004.jpg">
-		<Question Content="In the lower picture, what color is the king's beard?" LabelA="Black" LabelB="Brown" Answer="Brown"  />
-		<Question Content="In the lower picture, how many feathers are there on the king's crown?" LabelA="8" LabelB="6" Answer="6"  />
-		<Question Content="In the lower picture, what color is the king's ring?" LabelA="Yellow" LabelB="Red" Answer="Red"  />
-		<Question Content="In the lower picture, what color are the gems on the king's scepter?" LabelA="Red and Green" LabelB="Violet and Green" Answer="Violet and Green"  />
-		<Question Content="In the lower picture, how many golden tags are there on the king's chest?" LabelA="8" LabelB="6" Answer="6"  />
+		<Question Content="Ở hình dưới râu của vị vua có màu gì?" LabelA="Đen" LabelB="Nâu" Answer="Nâu"  />
+		<Question Content="Ở hình dưới trên vương miện có bao nhiêu lông vũ?" LabelA="8" LabelB="6" Answer="6"  />
+		<Question Content="Ở hình dưới nhẫn của vua có màu gì?" LabelA="Vàng" LabelB="Đỏ" Answer="Đỏ"  />
+		<Question Content="Ở hình dưới quyền trượng của vua có những viên ngọc màu gì?" LabelA="Đỏ, xanh lục" LabelB="Tím, xanh lục" Answer="Tím, xanh lục"  />
+		<Question Content="Ở hình dưới trên ngực vua có bao nhiêu chuông vàng?" LabelA="8" LabelB="6" Answer="6"  />
 	</Image>
 	<Image FileName="l005.jpg">
-		<Question Content="In the lower picture, what is the god holding in his hand?" LabelA="A fruit" LabelB="A pocket" Answer="A pocket"  />
-		<Question Content="In the lower picture, what is the god's feeling?" LabelA="Happy" LabelB="Angry" Answer="Angry"  />
-		<Question Content="In the lower picture, how many leaves can you see on the god's shoulder?" LabelA="3" LabelB="5" Answer="5"  />
-		<Question Content="In the lower picture, what color is the god's belt?" LabelA="Blue" LabelB="Orange" Answer="Orange"  />
-		<Question Content="In the lower picture, what color is the god's ear-ring?" LabelA="Black" LabelB="Yellow" Answer="Black"  />
+		<Question Content="Ở hình dưới vị thần đang cầm gì trên tay?" LabelA="Một trái cây" LabelB="Một túi tiền" Answer="Một túi tiền"  />
+		<Question Content="Ở hình dưới tâm trạng của vị thần thế nào?" LabelA="Hạnh phúc" LabelB="Bực bội" Answer="Bực bội"  />
+		<Question Content="Ở hình dưới trên áo choàng của vị thần có bao nhiêu chiếc lá?" LabelA="3" LabelB="5" Answer="5"  />
+		<Question Content="Ở hình dưới thắt lưng vị thần có màu gì?" LabelA="Xanh dương" LabelB="Cam" Answer="Cam"  />
+		<Question Content="Ở hình dưới khuyên tai của vị thần có màu gì?" LabelA="Đen" LabelB="Vàng" Answer="Đen"  />
 	</Image>
 	<Image FileName="l006.jpg">
-		<Question Content="Is there any lotus in the lower picture?" LabelA="Yes" LabelB="No" Answer="Yes"  />
-		<Question Content="How many sugar-canes are there in the lower picture?" LabelA="5" LabelB="3" Answer="5"  />
-		<Question Content="In the lower picture, what is the symbol on the elephant's head?" LabelA="A flame" LabelB="A heart" Answer="A heart"  />
-		<Question Content="In the lower picture, how many rings are there on each of the elepahnt's ears?" LabelA="3" LabelB="4" Answer="3"  />
-		<Question Content="In the lower picture, what is on the elephant's tail?" LabelA="A golden pipe" LabelB="A blossom" Answer="A golden pipe"  />
+		<Question Content="Ở hình dưới có bông hoa sen nào không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình dưới có bao nhiêu cây mía?" LabelA="5" LabelB="3" Answer="5"  />
+		<Question Content="Ở hình dưới trên đầu của con voi có biểu tượng gì?" LabelA="Ngọc lửa" LabelB="Trái tim" Answer="Trái tim"  />
+		<Question Content="Ở hình dưới mỗi tai của con voi có bao nhiêu khuyên?" LabelA="3" LabelB="4" Answer="3"  />
+		<Question Content="Ở hình dưới đuôi của con voi có gì?" LabelA="Ống đồng" LabelB="Bông hoa" Answer="Ống đồng"  />
 	</Image>
 	<Image FileName="l007.jpg">
-		<Question Content="In the lower picture, how many claws are there on the bear's hand?" LabelA="4" LabelB="3" Answer="3"  />
-		<Question Content="In the lower picture, what is the symbol on the bear's legs?" LabelA="A fire symbol" LabelB="A floral symbol" Answer="A fire symbol"  />
-		<Question Content="In the lower picture, what is the boy doing?" LabelA="Feeding the bear" LabelB="Holding the bear" Answer=""  />
-		<Question Content="In the lower picture, what is standing on the bear's back?" LabelA="A bird" LabelB="A rabbit" Answer="A bird"  />
-		<Question Content="In the lower picture, what color are the boy's clothes?" LabelA="Red and Yellow" LabelB="Red and Blue" Answer="Red and Yellow"  />
+		<Question Content="Ở hình dưới ta thấy con gấu có bao nhiêu móng vuốt?" LabelA="4" LabelB="3" Answer="3"  />
+		<Question Content="Ở hình dưới hình xăm trên con gấu là gì?" LabelA="Ngọn lửa" LabelB="Bông hoa" Answer="Ngọn lửa"  />
+		<Question Content="Ở hình dưới chàng trai đang làm gì?" LabelA="Cho gấu ăn" LabelB="Bắt tay" Answer="Cho gấu ăn"  />
+		<Question Content="Ở hình dưới trên lưng con gấu có gì?" LabelA="Con chim" LabelB="Con thỏ" Answer="Con chim"  />
+		<Question Content="Ở hình dưới quần áo chàng trai màu gì?" LabelA="Đỏ, Vàng" LabelB="Đỏ, Xanh dương" Answer="Đỏ, Vàng"  />
 	</Image>
 	<Image FileName="l008.jpg">
-		<Question Content="How many trees are there in the lower picture?" LabelA="7" LabelB="6" Answer="6"  />
-		<Question Content="In the lower picture, is the bird holding a gold-fish?" LabelA="Yes" LabelB="No" Answer="No"  />
-		<Question Content="In the lower picture, what is the bird wearing on its head?" LabelA="A golden mask" LabelB="A silver crown" Answer="A golden mask"  />
-		<Question Content="In the lower picture, how many golden rings are there on each of the bird's wings?" LabelA="4" LabelB="0" Answer="0"  />
-		<Question Content="In the lower picture, is the bird opening its mouth?" LabelA="Yes" LabelB="No" Answer="No"  />
+		<Question Content="Ở hình dưới có bao nhiêu cái cây?" LabelA="7" LabelB="6" Answer="6"  />
+		<Question Content="Ở hình dưới con chim đang bắt một con cá vàng?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
+		<Question Content="Ở hình dưới trên đầu con chim có gì?" LabelA="Mặt nạ vàng" LabelB="Vương miện bạc" Answer="Mặt nạ vàng"  />
+		<Question Content="Ở hình dưới trên cánh của con chim có bao nhiêu khuyên màu xanh?" LabelA="4" LabelB="0" Answer="0"  />
+		<Question Content="Ở hình dưới con chim có đang mở miệng?" LabelA="Có" LabelB="Không" Answer="Không"  />
 	</Image>
 	<Image FileName="l009.jpg">
-		<Question Content="In the lower picture, what are on the trees?" LabelA="Fruits" LabelB="Flowers" Answer="Fruits"  />
-		<Question Content="In the lower picture, is the chimpanzee angry?" LabelA="Yes" LabelB="No" Answer="No"  />
-		<Question Content="In the lower picture, what color is the boy's hair?" LabelA="Brown" LabelB="Red" Answer="Brown"  />
-		<Question Content="In the lower picture, does the chimpanzee have 3 fingers on each of its hands?" LabelA="Yes" LabelB="No" Answer="Yes"  />
-		<Question Content="In the lower picture, what color are the fruits?" LabelA="Orange" LabelB="Yellow" Answer="Orange"  />
+		<Question Content="Ở hình dưới trên cây có gì?" LabelA="Trái cây" LabelB="Hoa" Answer="Trái cây"  />
+		<Question Content="Ở hình dưới con khỉ đột có đang giận dữ không?" LabelA="Có" LabelB="Không" Answer="Không"  />
+		<Question Content="Ở hình dưới tóc chàng trai màu gì?" LabelA="Nâu" LabelB="Đỏ" Answer="Nâu"  />
+		<Question Content="Ở hình dưới mỗi tay của con khỉ đột có mấy ngón?" LabelA="3" LabelB="4" Answer="3"  />
+		<Question Content="Ở hình dưới trái cây có màu gì?" LabelA="Cam" LabelB="Vàng" Answer="Cam"  />
 	</Image>
 	<Image FileName="l010.jpg">
-		<Question Content="In the lower picture, how many heads does the monster have?" LabelA="9" LabelB="8" Answer="9"  />
-		<Question Content="In the lower picture, is there any skeleton?" LabelA="Yes" LabelB="No" Answer="Yes"  />
-		<Question Content="In the lower picture, how many dog heads is opening their mouths?" LabelA="3" LabelB="5" Answer="5"  />
-		<Question Content="In the lower picture, what does the monster have on its wings?" LabelA="Feathers" LabelB="Claws" Answer="Claws"  />
-		<Question Content="In the lower picture, which of the following does the monster have?" LabelA="Dog heads" LabelB="Bat heads" Answer="Dog heads"  />
+		<Question Content="Ở hình dưới con quái vật có bao nhiêu đầu?" LabelA="9" LabelB="8" Answer="9"  />
+		<Question Content="Ở hình dưới có bộ xương nào không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình dưới bao nhiêu đầu con chó đang mở miệng?" LabelA="3" LabelB="5" Answer="5"  />
+		<Question Content="Ở hình dưới trên cánh của con quái vật có gì?" LabelA="Lông vũ" LabelB="Móng vuốt" Answer="Móng vuốt"  />
+		<Question Content="Ở hình dưới con quái vật có gì?" LabelA="Đầu chó" LabelB="Đầu chơi" Answer="Đầu chó"  />
 	</Image>
 </Questions>

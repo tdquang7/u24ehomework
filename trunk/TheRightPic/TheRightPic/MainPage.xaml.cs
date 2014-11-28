@@ -56,12 +56,7 @@ namespace NowUSeeIt
                 if (false == ApplicationData.Current.LocalSettings.Values.ContainsKey("Points"))
                 {
                     ApplicationData.Current.LocalSettings.Values["Points"] = 0;
-                }
-                else
-                {
-                    // Đồng nghĩa đã từng chơi rồi
-                    btnStart.Content = "Chơi tiếp";
-                }                    
+                }           
 
                 if (!ApplicationData.Current.LocalSettings.Values.ContainsKey("AnsweredQuestionsCount"))
                     ApplicationData.Current.LocalSettings.Values["AnsweredQuestionsCount"] = 0;
@@ -77,6 +72,10 @@ namespace NowUSeeIt
                 // Tránh trường hợp bấm vào rồi quay lại vẫn thấy hướng dẫn y như cũ
                 txtHowTo.Text = "Cách chơi?";
             }
+
+            if (ApplicationData.Current.LocalSettings.Values.ContainsKey("AnsweredQuestionsCount"))
+                btnStart.Content = "Chơi tiếp";
+
 
             // Cho biết trạng thái chơi games hiện tại
             lblTotalImages.Text = string.Format("Đang có: {0} hình.", Global.TopImageList.Count * 2);
@@ -129,6 +128,8 @@ namespace NowUSeeIt
 
             lblTotalQuestions.Text = string.Format("Đã trả lời: {0}/{1} câu hỏi.", 0, Global.TopImageList.Count * 5 * 2);
             lblCurrentScore.Text = string.Format("Điểm: {0}/{1}", 0, 0);
+
+            btnStart.Content = "Bắt đầu";
         }
     }
 }
