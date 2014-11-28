@@ -49,6 +49,11 @@ namespace NowUSeeIt
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            // Reset trang về trạng thái ban đầu, trống trơn
+            leftResponse.Visibility = Visibility.Collapsed;
+            rightResponse.Visibility = Visibility.Collapsed;
+            imgAnswer.Visibility = Visibility.Collapsed;
+
             // Hiển thị điểm hiện tại
             lblScore.Text = String.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
 
@@ -93,6 +98,8 @@ namespace NowUSeeIt
 
         private void btnTop_Click(object sender, RoutedEventArgs e)
         {
+            leftResponse.Visibility = Visibility.Visible;
+
             if (!answered) // Ngăn cản việc bấm trả lời lại ảnh hưởng đến score
             {
                 timer.Stop();
@@ -107,6 +114,8 @@ namespace NowUSeeIt
 
         private void btnBottom_Click(object sender, RoutedEventArgs e)
         {
+            rightResponse.Visibility = Visibility.Visible;
+            
             if (!answered) // Ngăn cản việc bấm trả lời lại ảnh hưởng đến score
             {
                 timer.Stop();
@@ -143,6 +152,7 @@ namespace NowUSeeIt
             
             // Hiển thị hình ảnh của câu hỏi để người chơi kiểm tra lại
             imgAnswer.Source = new BitmapImage(new Uri(this.BaseUri, img.BasePath + img.FileName));
+            imgAnswer.Visibility = Visibility.Visible;
             logo.Visibility = Visibility.Visible;
             btnNext.Visibility = Visibility.Visible;
 

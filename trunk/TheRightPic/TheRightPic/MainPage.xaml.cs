@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using System.Xml.Linq;
 using Windows.Storage;
 using Windows.UI.Popups;
+using Windows.System.Display;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -83,6 +84,8 @@ namespace NowUSeeIt
             lblCurrentScore.Text = string.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
         }
 
+        
+
         // Nạp danh sách các hình với câu hỏi tương ứng từ tập tin xml
         List<DisplayImage> LoadDisplayImage(string xmlPath, string basePath)
         {
@@ -103,6 +106,10 @@ namespace NowUSeeIt
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
+            // Yêu cầu không tắt màn hình trong suốt thời gian chơi            
+            Global.Display.RequestActive();
+
+            // Chuyển qua màn hình hiển thị câu hỏi
             Frame.Navigate(typeof(ShowImagesPage));
         }
         

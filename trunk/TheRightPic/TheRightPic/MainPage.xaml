@@ -8,15 +8,26 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <Image Source="img/logo.png" Margin="16,10,8,510"/>
-        <Button x:Name="btnStart" Click="btnStart_Click" Content="Bắt đầu" HorizontalAlignment="Left" Margin="130,358,0,0" VerticalAlignment="Top" Width="131"/>
-        <HyperlinkButton x:Name="btnHowTo"  Click="btnHowTo_Click" HorizontalAlignment="Left" Margin="14,545,0,0" VerticalAlignment="Top" FontSize="20" Width="355" Height="88">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Image Source="img/logo.png" Margin="16,10" Height="144" Grid.Row="0" Grid.Column="1"/>
+        
+        <StackPanel Grid.Row="1" >
+            <TextBlock x:Name="lblTotalImages" Text="Đang có: 20 hình." HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="216" FontSize="25"/>
+            <TextBlock x:Name="lblTotalQuestions" Text="Đã trả lời: 10/100 câu hỏi" HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Top" Height="42"  FontSize="25" />
+            <TextBlock x:Name="lblCurrentScore" Text="Điểm: 2/10" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Height="42" Foreground="#FFF0E730" />
+
+            <Button x:Name="btnStart" Click="btnStart_Click" Content="Bắt đầu" HorizontalAlignment="Center" VerticalAlignment="Top" Width="131" />
+            <Button x:Name="btnReset" Click="btnReset_Click" Content="Tính điểm lại" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </StackPanel>
+        
+        <HyperlinkButton x:Name="btnHowTo"  Click="btnHowTo_Click" HorizontalAlignment="Center"  VerticalAlignment="Top" FontSize="20" Width="355" Height="88" Grid.Row="2">
             <TextBlock x:Name="txtHowTo" Text="Cách chơi?" TextWrapping="WrapWholeWords" TextAlignment="Center"/>
         </HyperlinkButton>
-        <TextBlock x:Name="lblTotalImages" Text="Đang có: 20 hình." HorizontalAlignment="Left" Margin="94,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="216" FontSize="25"/>
-        <TextBlock x:Name="lblTotalQuestions" Text="Đã trả lời: 10/100 câu hỏi" HorizontalAlignment="Left" Margin="64,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25"/>
-        <TextBlock x:Name="lblCurrentScore" Text="Điểm: 2/10" HorizontalAlignment="Left" Margin="130,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Foreground="#FFF0E730"/>
-        <Button x:Name="btnReset" Click="btnReset_Click" Content="Tính điểm lại" HorizontalAlignment="Left" Margin="130,434,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.System.Display;
 
 namespace NowUSeeIt
 {
@@ -14,5 +15,6 @@ namespace NowUSeeIt
         public static int TotalQuestions { get; set; }
         public static List<DisplayImage> TopImageList { get; set; }
         public static List<DisplayImage> BottomImageList { get; set; }
+        public static DisplayRequest Display{ get; set;}
     }
 }
