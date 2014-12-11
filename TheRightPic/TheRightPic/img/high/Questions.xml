@@ -29,7 +29,7 @@
 		<Question Content="Ở hình trên, tay trái của vị thần chỉ lên đâu?" LabelA="Xuống đất" LabelB="Lên trời" Answer="Lên trời"  />
 	</Image>
 	<Image FileName="h005.jpg">
-		<Question Content="Ở hình trên, có bông hoa sen nào không?" LabelA="Có" LabelB="Không" Answer="Không"  />
+		<Question Content="Ở hình trên, có bông hoa sen nào không?" LabelA="Có" LabelB="Không" Answer="Có"  />
 		<Question Content="Ở hình trên, có bao nhiêu con chuồn chuồn?" LabelA="0" LabelB="1" Answer="1"  />
 		<Question Content="Ở hình trên, nữ thần đang đeo bông tai hoa lan đúng không?" LabelA="Đúng" LabelB="Sai" Answer="Sai"  />
 		<Question Content="Ở hình trên, cổ tay nữ thần có gì?" LabelA="Vòng đeo tay" LabelB="Lông vũ" Answer="Lông vũ"  />
@@ -66,7 +66,7 @@
 	<Image FileName="h010.jpg">
 		<Question Content="Ở hình trên đuôi của nàng tiên giống đuôi con gì?" LabelA="Cá chép" LabelB="Cá heo" Answer="Cá heo"  />
 		<Question Content="Ở hình trên vật trang sức trên tóc nàng tiên màu gì?" LabelA="Đỏ" LabelB="Xanh dương" Answer="Đỏ"  />
-		<Question Content="Ở hình trên có con mực nào xung quan nàng tiên không?" LabelA="Có" LabelB="Không" Answer="Có"  />
+		<Question Content="Ở hình trên có con mực nào xung quanh nàng tiên không?" LabelA="Có" LabelB="Không" Answer="Có"  />
 		<Question Content="Ở hình trên con cá ngựa có màu gì?" LabelA="Tím, xanh lá" LabelB="Hồng, cam" Answer="Tím, xanh lá"  />
 		<Question Content="Ở hình trên có bao nhiêu cụm tảo biển?" LabelA="4" LabelB="3" Answer="3"  />
 	</Image>

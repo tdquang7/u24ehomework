@@ -30,8 +30,9 @@ namespace NowUSeeIt
         DispatcherTimer timer = new DispatcherTimer();
         int current = COUNTDOWN_STARTAT;
         Question selectedQuestion;
-        DisplayImage img;
+        DisplayImage image;
         bool answered = false;
+        Random randomizer = new Random();
 
         public ShowQuestionPage()
         {
@@ -58,10 +59,10 @@ namespace NowUSeeIt
             lblScore.Text = String.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
 
             // Lựa chọn ngẫu nhiên câu hỏi từ hình
-            img = e.Parameter as DisplayImage;
-            Random randomizer = new Random();
+            image = e.Parameter as DisplayImage;
+            image.TrackCount++;
 
-            selectedQuestion = img.Questions[randomizer.Next(img.Questions.Count)];
+            selectedQuestion = GetNextQuestion(image.Questions);
 
             // Hiển thị câu hỏi và các lựa chọn
             lblQuestion.Text = selectedQuestion.Content;
@@ -80,6 +81,34 @@ namespace NowUSeeIt
             btnTop.Tag = leftResponse;
             btnBottom.Tag = rightResponse;
         }        
+
+        Question GetNextQuestion(List<Question> list)
+        {
+            // Lựa ngẫu nhiên một câu hỏi
+            int position = randomizer.Next(list.Count);
+            int anchor = position; // Điểm neo vị trí ban đầu
+
+            Question nextQuestion = list[position];
+
+            // Xác định số lần được chọn lớn nhất là bao nhiêu
+            int maxCount = list.Max(q => q.TrackCount);
+
+            do
+            {
+                if (nextQuestion.TrackCount == maxCount)
+                {
+                    // Đi tới câu hỏi kế
+                    position = (position + 1) % list.Count; // % để quay lại đầu danh sách
+                    nextQuestion = list[position];
+                }
+                else
+                    break;
+            }
+            while (position != anchor);
+
+            return nextQuestion;
+        }
+
 
         void timer_Tick(object sender, object e)
         {
@@ -151,7 +180,7 @@ namespace NowUSeeIt
             }
             
             // Hiển thị hình ảnh của câu hỏi để người chơi kiểm tra lại
-            imgAnswer.Source = new BitmapImage(new Uri(this.BaseUri, img.BasePath + img.FileName));
+            imgAnswer.Source = new BitmapImage(new Uri(this.BaseUri, image.BasePath + image.FileName));
             imgAnswer.Visibility = Visibility.Visible;
             logo.Visibility = Visibility.Visible;
             btnNext.Visibility = Visibility.Visible;

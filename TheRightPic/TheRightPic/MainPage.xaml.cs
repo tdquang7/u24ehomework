@@ -79,8 +79,8 @@ namespace NowUSeeIt
 
 
             // Cho biết trạng thái chơi games hiện tại
-            lblTotalImages.Text = string.Format("Đang có: {0} hình.", Global.TopImageList.Count * 2);
-            lblTotalQuestions.Text = string.Format("Đã trả lời: {0}/{1} câu hỏi.", Global.AnsweredQuestionsCount, Global.TopImageList.Count * 5 * 2);
+            lblTotalImages.Text = string.Format("Số lượng hình: {0}", Global.TopImageList.Count * 2);
+            lblTotalQuestions.Text = string.Format("Số câu hỏi: {0} câu hỏi", Global.TopImageList.Count * 5 * 2);
             lblCurrentScore.Text = string.Format("Điểm: {0}/{1}", Global.CurrentPoint, Global.AnsweredQuestionsCount);
         }
 
